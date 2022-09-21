@@ -1,0 +1,79 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() 
+{
+    // Complete the code.
+    int a,b;
+    cin>>a;
+    
+    cin>>b;
+    for(int n=a;n<=b;n++)
+    {
+        if(n<=9)
+        {
+            if(n==1)
+            {
+                cout<<"one";
+                cout<<"\n";
+            }
+            else if(n==2)
+            {
+                cout<<"two";
+                cout<<"\n";
+            }   
+            else if(n==3)
+            {
+                cout<<"three";
+                cout<<"\n";
+            }
+            else if(n==4)
+            {
+                cout<<"four";
+                cout<<"\n";
+            }
+            else if(n==5)
+            {
+                cout<<"five";
+                cout<<"\n";
+            }
+            else if(n==6)
+            {
+                cout<<"six";
+                cout<<"\n";
+            }
+            else if(n==7)
+            {
+                cout<<"seven";
+                cout<<"\n";
+            }
+            else if(n==8)
+            {
+                cout<<"eight";
+                cout<<"\n";
+            }
+            else if(n==9)
+            {
+                cout<<"nine";
+                cout<<"\n";
+            }
+    
+        }
+        else
+        {
+            if(n%2==0)
+            {
+                cout<<"even";
+                cout<<"\n";
+            }
+            else 
+            {
+                cout<<"odd";
+                cout<<"\n";
+            }
+        }
+
+    }
+    return 0;
+}
