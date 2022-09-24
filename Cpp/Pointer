@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <cstdlib>
+int update(int *a,int *b) {
+    // Complete this function 
+    int a1= *a+*b;
+    return a1;
+     
+}
+int up(int *a,int *b)
+{
+    int a2 = abs(*a - *b);  
+    return a2; 
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    int p = update(pa, pb);
+    int q = up(pa,pb);
+    printf("%d\n%d", p,q);
+
+    return 0;
+}
