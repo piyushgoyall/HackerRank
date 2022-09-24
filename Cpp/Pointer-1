@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+#include <cstdlib>
+void update(int *a,int *b) 
+{
+    // Complete this function 
+    int a1,a2;
+    a1=*a+*b;
+    a2=abs(*a-*b);
+    *a=a1;
+    *b=a2;
+}
+int main() 
+{
+    int a, b;
+    int *pa = &a, *pb = &b;
+    cin>>a>>b;
+    update(pa, pb);
+    cout<<a;
+    cout<<"\n";
+    cout<<b;
+    return 0;
+}
