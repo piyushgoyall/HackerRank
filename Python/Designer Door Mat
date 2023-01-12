@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+a = input().split(" ")
+r = int(a[0])
+c = int(a[1])
+
+des = ".|."
+message = "WELCOME"
+
+for i in range(r):
+    if (i % 2) != 0:
+        print((des*i).center(c,'-'))
+print(message.center(c,'-'))
+for i in range(r - 1 , 0 , -1):
+    if (i % 2 ) != 0:
+        print((des*i).center(c,'-'))
